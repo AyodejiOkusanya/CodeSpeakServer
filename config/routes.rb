@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  # resources :snippets
+  resources :snippets, only: [:create]
   resources :users
 
   post 'signin', to: 'users#signin'
